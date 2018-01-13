@@ -4,11 +4,11 @@ In this document, we're going to condense how you should setup your machine in p
 
 **Follow this guide in its [YouTube Video Tutorial](https://youtu.be/YZGPxTuSdis)**
 
-- [Step 1: Install Unity](#Step-1-Install-Unity)
-- [Step 2: Install Jupyter Notebook](#)
-- [Step 3: Fork, Clone & Build Relevant Repositories](#)
-- [Step 4: Start Jupyter Notebook](#)
-- [Step 5: Start OpenMined Unity Application](#)
+- [Step 1: Install Unity](#step-1-install-unity)
+- [Step 2: Install Jupyter Notebook](#step-2-install-jupyter-notebook)
+- [Step 3: Fork, Clone & Build Relevant Repositories](#step-3-fork-clone--build-relevant-repositories)
+- [Step 4: Start Jupyter Notebook](#step-4-start-jupyter-notebook)
+- [Step 5: Start OpenMined Unity Application](#step-5-start-openmined-unity-application)
 
 # Step 1: Install Unity
 
@@ -69,7 +69,7 @@ For organizational reasons, is important to have a dedicaded directory on you co
 
 #### Part 2: Fork PySyft an OpenMined Repositories
 
-Now let's download the files of the OpenMined (The OpenMined Unity Application) and PySyft (Private Deep Learning Client) projetcs. To do that, follow this steps:
+Now let's download the files of the **OpenMined** (The OpenMined Unity Application) and **PySyft** (Private Deep Learning Client) projetcs. To do that, follow this steps:
 
 1. Fork the Repository of both projects by clicking on the top right corner button.
 
@@ -86,7 +86,7 @@ Now let's download the files of the OpenMined (The OpenMined Unity Application) 
    
    The link should be like: `https://github.com/<your github username>/<name of the repository>.git`
    
-   If you're having some issues to clone, you can try [clone with SSH](https://youtu.be/Vi-WqFKYpnw).
+   If you're having some issues to clone, you can try [clone with SSH](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/#platform-mac).
    
 Here's an image showing the "Fork" button:
 
@@ -150,13 +150,13 @@ Then, in the `Inspector` pane (towards the bottom), you should see a `Syft Serve
 
 If you don't see `Syft Server Script` in the inspector pane, drag the file `Assets/OpenMined/Network/Servers/SyftServer` and drop it into the inspector as pictured below.
 
-![](../resources/images/DragSyftServer.png)
+![](../resources/images/syft_server_small.PNG)
 
 If you DO see the `Syft Server Script` but `FloatTensorShaders` is NOT in the `Shader` area (if area will is grayed out and say `None (ComputeShader)`. Drag the file `Assets/OpenMined/Syft/Tensor/Ops/Shaders/FloatTensorShaders` into that text area like seen below.
 
-![](../resources/images/DragShader.png)
+![](../resources/images/floattensor_shader_small.PNG)
 
-#### Part 5: Press Play
+#### Part 5: Press Play[](#){name=step5}
 
 At the top of the Unity application there's a Play button. Press it! This will start the OpenMined Server.
 
