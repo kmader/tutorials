@@ -1,132 +1,158 @@
 # Linux - Setting up your Dev Environment
 
-In this document, we're going to condense how you
-should setup your machine in preparation for the rest
-of the tutorials contained in this document. Running
-OpenMined means having several different applications
-and repositories correctly installed and ready to work
-together, which can have unique challenges for each
-system. To that end, let's get you set up and running!
+In this document, we're going to condense how you should setup your machine in preparation for the rest of the tutorials contained in this document. Running OpenMined means having several different applications and repositories correctly installed and ready to work together, which can have unique challenges for each system. To that end, let's get your Mac up and running!!!
 
-**Video Tutorial:** https://youtu.be/P3DPmVlWye0
+**Follow this guide in its [YouTube Video Tutorial](https://youtu.be/P3DPmVlWye0)**
+
+- [Step 1: Install Unity](#Step-1-Install-Unity)
+- [Step 2: Install Jupyter Notebook](#)
+- [Step 3: Fork, Clone & Build Relevant Repositories](#)
+- [Step 4: Start Jupyter Notebook](#)
+- [Step 5: Start OpenMined Unity Application](#)
 
 # Step 1: Install Unity
 
-The longest part of the process is downloading the Unity3d video game engine (because it's a rather large file). You can download an installer for linux [here](http://beta.unity3d.com/download/2ca68d182788/public_download.html).
+Unity is a cross-platform game engine to develop applications (usually games) for computers, consoles, and mobile devices.
+Since we want utilize the GPU power from video games (such as PS4 and Xbox One) to training the Deep Learning models, Unity helps us to develop OpenMined application that can run like a game on those consoles.
 
-Click on the `Linux Download Assistant` to download
-the installer.  After the download is complete, make
-it executable with `chmod +x UnitySetup-2017.3.0b1`.
-Then, execute it with `./UnitySetup-2017.3.0b1`.  This
-will open the installer.  Follow the instructions to
-complete the unity installation.
+1. So, to get Unity just proceed to [this page](http://beta.unity3d.com/download/2ca68d182788/public_download.html)
+
+2. Click on the `Linux Download Assistant` link to download the installer.
+
+3. After the download is complete, make it executable with `chmod +x UnitySetup-2017.3.0b1`.
+
+4. Then, execute it with `./UnitySetup-2017.3.0b1`.
+
+5. This will open the installer. Follow the instructions to complete the Unity installation.
+
+It's the longest part of the process, but you can continue with the other steps in this tutorial while you wait for the download.
 
 A few quick tips:
 
-* You only need the Free version in order to use OpenMined
-* Unity will start with your internet turned off, but if you have your internet turned on but are simply attached to a bad connection, sometimes Unity will hang. Just turn off your Wifi and restart Unity if you have this issue.
+- You only need the *Free* version in order to use OpenMined.
+- Unity will start with your internet turned *off*, but if you have your internet turned *on* but are simply attached to a bad connection, sometimes Unity will hang. Just turn off your Wi-Fi and restart Unity if you have this issue.
 
 # Step 2: Install Jupyter Notebook
 
-I'll admit, this part can be annoying if you don't use
-the right tools. For Linux, I've found that anaconda
-is the best installation tool for jupyter notbook.
-(READ: don't use pip...pip is unreliable for
-installing jupyter notebook. Sometimes it works,
-sometimes it totally screws up your system).
+We use Jupyter Notebook to register code and its explanations, because it allows not only write executable documents which can be run to perform data analysis, but also human-readable documents containing the analysis description and the results (figures, tables, etc..)
+
+The best way to install Jupyter Notebook is thru Anaconda (the most popular Python Data Science platform), because use *pip* (a Python package manager) is unreliable for installing Jupyter Notebook. Sometimes it works, sometimes it totally screws up your system
 
 #### Part 1: Install Anaconda
-First, navigate to the [Linux Anaconda Download Page](https://www.anaconda.com/download/#linux) and click "Download" for the Python 3.6 version.
 
-Once you download the install script, use a terminal to make it executable and then run it.
+First, navigate to the [Linux Anaconda Download Page](https://www.anaconda.com/download/#linux) and click "Download" for the *Python 3.6* version. And once you download the install script, type this commands on terminal:
 
-```sh
-chmod +x Anaconda3-5.0.1-Linux-x86_64.sh
-./Anaconda3-5.0.1-Linux-x86_64.sh
-```
+1. Make it executable: `chmod +x Anaconda3-5.0.1-Linux-x86_64.sh`
 
-Follow the instructions in the installer.
-When asked if the installer should add the install location to your PATH, say yes.
+2. And then run it: `./Anaconda3-5.0.1-Linux-x86_64.sh`
 
-Once the installer finishes.  Re-source your bashrc: `source ~/.bashrc`.
+   - Follow the instructions in the installer.
+   - When asked if the installer should add the install location to your PATH, say **yes**.
+
+3. Once the installer finishes. Re-source your bashrc: `source ~/.bashrc`.
 
 #### Part 2: Change to Python 3.6
-At the time of writing, PySyft is built against Python 3.6, so we'll want to change over to 3.6 . Fortunately, anaconda includes a [Tutorial on how to do this](https://conda.io/docs/user-guide/tasks/manage-python.html).
 
-First, see if you're already on 3.6
-```
-python --version
-```
+At the time of writing, PySyft is built against Python 3.6 version, so we'll want to change the default version over to *3.6*.
+Fortunately, Anaconda includes a [tutorial on how to do this](https://conda.io/docs/user-guide/tasks/manage-python.html).
 
-If it says 3.6, skip to Part 3!!
-```
-conda create -n py36 python=3.6 anaconda
-```
+First, restart your terminal (if its open since before Anaconda instalation) and see if you're already on version 3.6 by enter `$ python --version`. If it says 3.6, you can skip to *Part 3*! If it don't, just run this 2 commands:
 
-```
-source activate py36
-```
+1. Create the new environment for Python 3.6: `$ conda create -n py36 python=3.6 anaconda`
 
-Now, when you run the following command, it should tell you "3.6"
-```
-python --version
-```
+2. Activate the new environment: `$ source activate py36`
+
+Now, check the version again, and it should tell you "3.6".
 
 #### Part 3: Install Jupyter Notebook
 
-If you installed Anaconda, you have already installed jupyter notebook! If you did not, you'll need to use [these instructions](http://jupyter.readthedocs.io/en/latest/install.html) as a backup.
+If you installed Anaconda, you have already installed Jupyter Notebook!
+But if you didnt, you'll need to use [these instructions](http://jupyter.readthedocs.io/en/latest/install.html) as a backup.
 
 # Step 3: Fork, Clone & Build Relevant Repositories
 
-#### Part 0: If wanted, create an OpenMined directory (to hold all your OM projects)
-Start by creating a general directory for your OpenMined projects. In that directory, run the following commands.
-```
-mkdir OpenMined
-```
+To download the project files to your computer you could directly clone our main repository, but by doing that you aren't be able to send Pull Request. So in order to do that, you need to make a fork.
 
-#### Part 1: Fork PySyft an OpenMined Repositories
-- Go to the following link: [https://github.com/OpenMined/OpenMined](https://github.com/OpenMined/OpenMined)
-- Click the "Fork" button at the top right corner.
-![](../resources/images/fork.png)
-- Go to the following link: [https://github.com/OpenMined/PySyft](https://github.com/OpenMined/PySyft)
-- Clik the "Fork" button at the top right corner (yes this is a second time)
+#### Part 1: Your OpenMined directory
 
-This will copy our repositories into YOUR github account. Now, you want to clone those repositories to your OpenMined project directory that you created in Part 1.
-```
-git clone git@github.com:<your github username>/OpenMined.git
-git clone git@github.com:<your github username>/PySyft.git
-```
+For organizational reasons, is important to have a dedicaded directory on you computer to hold all your OpenMined related projects.
 
-#### Part 2: Install PySyft
-Follow the instructions in the [PySyft README](https://github.com/OpenMined/PySyft#local-setup).
+1. To do that, just create a OpenMined folder: `$ mkdir OpenMined`
 
-# Step 3: Start Jupyter Notebook
+2. Go to that folder: `$ cd OpenMined`
 
-From your general directory (containing both your OpenMined and PySyft folders), run the following command.
+3. And do one more check if that Python 3.6 is activated: `$ python --version`
+   
+   - If don't activate the 3.6 environment: `$ source activate py36`
 
-```
-jupyter notebook
-```
+#### Part 2: Fork PySyft an OpenMined Repositories
 
-This should start the jupyer notebook server and automatically open your browser to the main jupyter notebook folder.
+Now let's download the files of the OpenMined (The OpenMined Unity Application) and PySyft (Private Deep Learning Client) projetcs. To do that, follow this steps:
 
-# Step 4: Start OpenMined Unity Application
+1. Fork the Repository of both projects by clicking on the top right corner button.
+
+   - [OpenMined Repository](https://github.com/OpenMined/OpenMined)
+   - [PySyft Repository](https://github.com/OpenMined/PySyft)
+   
+   This will copy our repositories to **your** GitHub account.
+   
+2. Once in your own GitHub repository, click in the green button "Clone or download", and then copy the shown link.
+
+3. Now back to the terminal and clone the repositories by typing this command:
+
+   - `$ git clone <and paste the link>`
+   
+   The link should be like: `https://github.com/<your github username>/<name of the repository>.git`
+   
+   If you're having some issues to clone, you can try [clone with SSH](https://youtu.be/Vi-WqFKYpnw).
+   
+Here's an image showing the "Fork" button:
+
+![Fork Button](../resources/images/fork.png)
+
+#### Part 3: Install and Build
+
+Let's install PySyft!
+
+1. Go to the PySyft folder: `$ cd PySyft`
+
+2. Install the requeriments: `$ pip3 install -r requirements.txt`
+
+3. Install the application itself: `$ python setup.py install`
+
+  Notice that if you don't activate the environment *3.6* with Anaconda, you need to type `python3` instead of just `python`.
+
+4. Go back to OpenMined folder: `$ cd ..`
+
+If you have any trouble with the installation of PySyft, debug using the [README](https://github.com/OpenMined/PySyft).
+
+# Step 4: Start Jupyter Notebook
+
+From your general directory (containing both your OpenMined and PySyft folders), run the following command:
+
+- Start the Jupyter Notebook Server: `$ jupyter notebook`
+
+It should automatically open your browser to the main Jupyter Notebook folder.
+
+# Step 5: Start OpenMined Unity Application
+
+Last step! We're so close. Now we gonna open the OpenMined Unity Project in Unity3D.
 
 #### Part 1: Start Unity Application
 
-Find where Unity installed and start the application.  
-It should already be running if you haven't closed it
-after the installer finished.
+Find where Unity installed, start the application and login with your account.
 
 #### Part 2: Select OpenMined/UnityProject
 
-Unity will ask you which project you want to open. You want to select the folder "UnityProject" within the [https://github.com/OpenMined/OpenMined](https://github.com/OpenMined/OpenMined) project.
+Click in the "Open" button and select the folder `UnityProject` within the OpenMined folder.
 
 ![](../resources/images/OpenUnityProject.png)
 
 #### Part 3: Double-click Assets/OpenMinedMain
 
-In the project pane, in the "Assets" folder, double click the unity scene (little file with the unity logo next to it) called "OpenMinedMain".
+To design games, Unity uses a concept called 'scene', witch is a collection of code objects that interacts each other. In OpenMined case, we're build an Deep Learning library, so our scene it's a little bit different.
+
+To open it, go to the project pane, and in the "Assets" folder, double click on `OpenMinedMain` Unity Scene (little file with the Unity logo next to it).
 
 ![](../resources/images/SelectUnityScene.png)
 
@@ -140,33 +166,28 @@ Then, in the `Inspector` pane (towards the bottom), you should see a `Syft Serve
 
 ![](../resources/images/CameraInspector.png)
 
-If you don't see `Syft Server Script` in the inspector pane, drag the file Assets/OpenMined/Network/Servers/SyftServer and drop it into the inspector as pictured below.
+If you don't see `Syft Server Script` in the inspector pane, drag the file `Assets/OpenMined/Network/Servers/SyftServer` and drop it into the inspector as pictured below.
 
 ![](../resources/images/DragSyftServer.png)
 
-If you DO see the `Syft Server Script` but `FloatTensorShaders` is NOT in the `Shader` area (if area will is grayed out and say `None (ComputeShader)`. Drag the file Assets/OpenMined/Syft/Tensor/Ops/Shaders/FloatTensorShaders into that text area like seen below.
+If you DO see the `Syft Server Script` but `FloatTensorShaders` is NOT in the `Shader` area (if area will is grayed out and say `None (ComputeShader)`. Drag the file `Assets/OpenMined/Syft/Tensor/Ops/Shaders/FloatTensorShaders` into that text area like seen below.
 
 ![](../resources/images/DragShader.png)
 
-#### Part 5: Press Play!!!
+#### Part 5: Press Play
 
-At the top of the Unity application there's a Play button. Press it! This will start the OpenMined server and you'll be ready to start doing some tutorials!!
+At the top of the Unity application there's a Play button. Press it! This will start the OpenMined Server.
+
 ![](../resources/images/UnityPlayButton.png)
 
-#### Make sure everything is working!
+# Next Step
 
-If jupyter notebook is not running, start it with
-`jupyter notebook`.  If you still have it running,
-open the tree view by going to `localhost:8888/tree` in
-your browser.  There are lots of notebooks in the
-openmined repo that you can test. Navigate to
-`openmined/notebooks` and then click `Syft Tensor Example Notebook`.
+Now you're a ready to start doing some [tutorials](https://github.com/OpenMined/tutorials)!
 
-Inside the notebook, run the first two cells.  If they
-execute properly, you are all set!
+If jupyter notebook is not running, start it with `jupyter notebook`.  If you still have it running, open the tree view by going to `localhost:8888/tree` in your browser.  There are lots of notebooks in the openmined repo that you can test. Navigate to `openmined/notebooks` and then click `Syft Tensor Example Notebook`.
 
-#### Getting help
+Inside the notebook, run the first two cells. If they execute properly, you are all set!
 
-If you have any trouble at any point.  Drop into our
-[slack](https://openmined.slack.com/join/shared_invite/enQtMjU5MzE5ODk4MTc3LWI2ZGE1ODc1YjdkZDJiNjdmYTdkZmE4ZTY5N2NkNDgxZjUyNjgxMTVhMmJkOTZhZjEyZDA3MTM2MThkZWVhMjg) group and ask for help!  There are lots of people
-always on line who are glad to help!
+# Getting help
+
+If you have any trouble at any point. Drop into our [slack](https://openmined.slack.com/join/shared_invite/enQtMjU5MzE5ODk4MTc3LWI2ZGE1ODc1YjdkZDJiNjdmYTdkZmE4ZTY5N2NkNDgxZjUyNjgxMTVhMmJkOTZhZjEyZDA3MTM2MThkZWVhMjg) group and ask for help! There are lots of people always online who are glad to help!
