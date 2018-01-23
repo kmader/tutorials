@@ -1,5 +1,9 @@
 # Installation Tutorial
 
+## Requirements
+
+Node v8: `nvm install v8`, unless using ganache-cli, see note below.
+
 ## Step 1: Get Sonar and Ganache set up
 
 ### Part 1: Clone Sonar
@@ -21,6 +25,8 @@ It can be downloaded from here http://truffleframework.com/ganache/.
 If installing for commandline you can use:
 
 `npm install -g ganache-cli`
+
+**Note:** If using ganache-cli use node verison 7. For example: `nvm install v7`.
 
 You might also need to install truffle:
 
