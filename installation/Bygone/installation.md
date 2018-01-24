@@ -2,7 +2,9 @@
 
 ## Requirements
 
+Linux or macOS, not tested on Windows yet
 Node v8: `nvm install v8`
+Non-anaconda Python 2.7
 
 ## Step 1: Get Sonar and Ganache set up
 
@@ -14,7 +16,7 @@ Node v8: `nvm install v8`
 
 We need to install the dependencies of Sonar so from the Sonar repo run the following command:
 
-`npm install --python=python2.7`
+`npm install`
 
 ### Part 3: Install Ganache
 
@@ -49,6 +51,12 @@ If all the tests pass you should be good to continue!
 We need to install the dependencies of Bygone so from the Bygone repo run the following command:
 
 `npm install`
+
+If the default python on your machine is not 2.7 you'll have to give an extra argument to the `npm install` command above:
+
+`npm install --python={location of non-anaconda python}/python2.7`
+
+We've had issues with the anaconda version of python2.7 so you might need install a non-anaconda version of it.
 
 ## Step 3: Configure Bygone
 
