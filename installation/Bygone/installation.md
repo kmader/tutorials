@@ -22,7 +22,7 @@ We need to install the dependencies of Sonar so from the Sonar repo run the foll
 
 Ganache is a local ethereum testing blockchain and can be using for testing and development.
 
-It can be downloaded from here http://truffleframework.com/ganache/.
+It can be downloaded from here https://github.com/trufflesuite/ganache/releases. DO NOT download the newest version. Download 1.02.
 
 You might also need to install truffle:
 
