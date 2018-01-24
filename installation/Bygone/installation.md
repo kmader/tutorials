@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Node v8: `nvm install v8`, unless using ganache-cli, see note below.
+Node v8: `nvm install v8`
 
 ## Step 1: Get Sonar and Ganache set up
 
@@ -22,12 +22,6 @@ Ganache is a local ethereum testing blockchain and can be using for testing and 
 
 It can be downloaded from here http://truffleframework.com/ganache/.
 
-If installing for commandline you can use:
-
-`npm install -g ganache-cli`
-
-**Note:** If using ganache-cli use node verison 7. For example: `nvm install v7`.
-
 You might also need to install truffle:
 
 `npm install -g truffle`
@@ -35,10 +29,6 @@ You might also need to install truffle:
 ### Part 4: Set Ganache port to 9545
 
 Once Ganache is installed we need to set the port for 9545 so that the test suite and Bygone can find it. In Ganache, navigate to the settings in the upper right hand corner of the window and then set the port to 9545.
-
-If running from the commandline:
-
-`ganache-cli --port=9545`
 
 ### Part 5: Run Sonar tests
 
