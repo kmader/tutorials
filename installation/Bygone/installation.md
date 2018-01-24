@@ -87,8 +87,8 @@ Copy and paste the JSON below into a file called config-secret.json.
 ```
 {
   "ethereumUrl": "http://127.0.0.1:9545",
-  "privateKey": "PRIVATE KEY GOES HERE",
-  "publicKey": "PUBLIC KEY GOES HERE"
+  "privateKey": "0x{PRIVATE KEY GOES HERE}", 
+  "publicKey": "0x{PUBLIC KEY GOES HERE}"
 }
 ```
 
