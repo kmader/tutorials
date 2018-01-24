@@ -14,7 +14,7 @@ Node v8: `nvm install v8`
 
 We need to install the dependencies of Sonar so from the Sonar repo run the following command:
 
-`npm install`
+`npm install --python=python2.7`
 
 ### Part 3: Install Ganache
 
