@@ -2,9 +2,9 @@
 
 ## Requirements
 
-Linux or macOS, not tested on Windows yet
-Node v8: `nvm install v8`
-Non-anaconda Python 2.7
+- Linux or macOS (not tested on Windows yet)
+- Node v8: `nvm install v8`
+- Non-anaconda Python 2.7
 
 ## Step 1: Get Sonar and Ganache set up
 
