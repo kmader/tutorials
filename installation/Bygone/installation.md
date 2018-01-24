@@ -50,7 +50,7 @@ If all the tests pass you should be good to continue!
 
 We need to install the dependencies of Bygone so from the Bygone repo run the following command:
 
-`npm install`
+`npm install --python=python2.7`
 
 If the default python on your machine is not 2.7 you'll have to give an extra argument to the `npm install` command above:
 
