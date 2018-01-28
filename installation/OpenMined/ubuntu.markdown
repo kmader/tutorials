@@ -15,7 +15,7 @@ In this document, we're going to condense how you should setup your machine in p
 Unity is a cross-platform game engine to develop applications (usually games) for computers, consoles, and mobile devices.
 Since we want utilize the GPU power from video games (such as PS4 and Xbox One) to training the Deep Learning models, Unity helps us to develop OpenMined application that can run like a game on those consoles.
 
-1. So, to get Unity just proceed to [this page](http://beta.unity3d.com/download/2ca68d182788/public_download.html)
+1. So, to get Unity just proceed to [this page](https://beta.unity3d.com/download/7807bc63c3ab/public_download.html)
 
 2. Click on the `Linux Download Assistant` link to download the installer.
 
