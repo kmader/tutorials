@@ -90,7 +90,7 @@ Now let's download the files of the **OpenMined** (The OpenMined Unity Applicati
    
 Here's an image showing the "Fork" button:
 
-![Fork Button](../resources/images/fork.png)
+![Fork Button](../../resources/images/fork.png)
 
 #### Part 3: Install and Build
 
@@ -128,7 +128,7 @@ Find where Unity installed, start the application and login with your account.
 
 Click in the "Open" button and select the folder `UnityProject` within the OpenMined folder.
 
-![](../resources/images/OpenUnityProject.png)
+![](../../resources/images/OpenUnityProject.png)
 
 #### Part 3: Double-click Assets/OpenMinedMain
 
@@ -136,31 +136,31 @@ To design games, Unity uses a concept called 'scene', witch is a collection of c
 
 To open it, go to the project pane, and in the "Assets" folder, double click on `OpenMinedMain` Unity Scene (little file with the Unity logo next to it).
 
-![](../resources/images/SelectUnityScene.png)
+![](../../resources/images/SelectUnityScene.png)
 
 #### Part 4: Make sure SyftServer is properly attached to the FloatTensorShaders file.
 
 In the `Hierarchy` pane, click the `Main Camera`.
 
-![](../resources/images/HierarchyMainCamera.png)
+![](../../resources/images/HierarchyMainCamera.png)
 
 Then, in the `Inspector` pane (towards the bottom), you should see a `Syft Server (script)` inside of which is a textarea labeled `Shader`. The contents of this text area should say `FloatTensorShaders` like pictured below.
 
-![](../resources/images/CameraInspector.png)
+![](../../resources/images/CameraInspector.png)
 
 If you don't see `Syft Server Script` in the inspector pane, drag the file `Assets/OpenMined/Network/Servers/SyftServer` and drop it into the inspector as pictured below.
 
-![](../resources/images/syft_server_small.PNG)
+![](../../resources/images/syft_server_small.PNG)
 
 If you DO see the `Syft Server Script` but `FloatTensorShaders` is NOT in the `Shader` area (if area will is grayed out and say `None (ComputeShader)`. Drag the file `Assets/OpenMined/Syft/Tensor/Ops/Shaders/FloatTensorShaders` into that text area like seen below.
 
-![](../resources/images/floattensor_shader_small.PNG)
+![](../../resources/images/floattensor_shader_small.PNG)
 
 #### Part 5: Press Play[](#){name=step5}
 
 At the top of the Unity application there's a Play button. Press it! This will start the OpenMined Server.
 
-![](../resources/images/UnityPlayButton.png)
+![](../../resources/images/UnityPlayButton.png)
 
 # Next Step
 
