@@ -141,13 +141,13 @@ To open it, go to the project pane, and in the "Assets" folder, double click on 
 
 ![](../resources/images/scene_open_windows.PNG)
 
-#### Part 4: Make sure SyftServer is properly attached to the FloatTensorShaders file.
+#### Part 4: Make sure SyftServer is properly attached to the Shaders file.
 
 In the `Hierarchy` pane, click the `Main Camera`.
 
 ![](../resources/images/main_camera_windows.PNG)
 
-Then, in the `Inspector` pane (towards the bottom), you should see a `Syft Server (script)` inside of which is a textarea labeled `Shader`. The contents of this text area should say `FloatTensorShaders` like pictured below.
+Then, in the `Inspector` pane (towards the bottom), you should see a `Syft Server (script)` inside of which is a textarea labeled `Shader`. The contents of this text area should say `Shaders` like pictured below.
 
 ![](../resources/images/CameraInspector.png)
 
@@ -155,7 +155,7 @@ If you don't see `Syft Server Script` in the inspector pane, drag the file `Asse
 
 ![](../resources/images/syft_server_small.PNG)
 
-If you DO see the `Syft Server Script` but `FloatTensorShaders` is NOT in the `Shader` area (if area will is grayed out and say `None (ComputeShader)`. Drag the file `Assets/OpenMined/Syft/Tensor/Ops/Shaders/FloatTensorShaders` into that text area like seen below.
+If you DO see the `Syft Server Script` but `Shaders` is NOT in the `Shader` area (if area will is grayed out and say `None (ComputeShader)`. Drag the file `Assets/OpenMined/Syft/Tensor/Ops/Shaders/Shaders` into that text area like seen below (it used to be called `FloatTensorShader`).
 
 ![](../resources/images/floattensor_shader_small.PNG)
 
