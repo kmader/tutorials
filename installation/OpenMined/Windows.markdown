@@ -47,7 +47,7 @@ First, open "Anaconda Prompt" program, that should have been downloaded with Anc
 Now, check the version again, and it should tell you "3.6".
 
 The Anaconda Prompt program:
-![Anaconda_Prompt](../resources/images/anaconda_prompt_windows.PNG)
+![Anaconda_Prompt](../../resources/images/anaconda_prompt_windows.PNG)
 
 #### Part 3: Install Jupyter Notebook
 
@@ -93,7 +93,7 @@ Now let's download the files of the **OpenMined** (The OpenMined Unity Applicati
    
 Here's an image showing the "Fork" button:
 
-![Fork Button](../resources/images/fork.png)
+![Fork Button](../../resources/images/fork.png)
 
 #### Part 3: Install and Build
 
@@ -131,7 +131,7 @@ Find where Unity installed, start the application and login with your account.
 
 Click in the "Open" button and select the folder `UnityProject` within the OpenMined folder.
 
-![](../resources/images/open_unity_project_windows.PNG)
+![](../../resources/images/open_unity_project_windows.PNG)
 
 #### Part 3: Double-click Assets/OpenMinedMain
 
@@ -139,31 +139,31 @@ To design games, Unity uses a concept called 'scene', witch is a collection of c
 
 To open it, go to the project pane, and in the "Assets" folder, double click on `OpenMinedMain` Unity Scene (little file with the Unity logo next to it).
 
-![](../resources/images/scene_open_windows.PNG)
+![](../../resources/images/scene_open_windows.PNG)
 
 #### Part 4: Make sure SyftServer is properly attached to the Shaders file.
 
 In the `Hierarchy` pane, click the `Main Camera`.
 
-![](../resources/images/main_camera_windows.PNG)
+![](../../resources/images/main_camera_windows.PNG)
 
 Then, in the `Inspector` pane (towards the bottom), you should see a `Syft Server (script)` inside of which is a textarea labeled `Shader`. The contents of this text area should say `Shaders` like pictured below.
 
-![](../resources/images/CameraInspector.png)
+![](../../resources/images/CameraInspector.png)
 
 If you don't see `Syft Server Script` in the inspector pane, drag the file `Assets/OpenMined/Network/Servers/SyftServer` and drop it into the inspector as pictured below.
 
-![](../resources/images/syft_server_small.PNG)
+![](../../resources/images/syft_server_small.PNG)
 
 If you DO see the `Syft Server Script` but `Shaders` is NOT in the `Shader` area (if area will is grayed out and say `None (ComputeShader)`. Drag the file `Assets/OpenMined/Syft/Tensor/Ops/Shaders/Shaders` into that text area like seen below (it used to be called `FloatTensorShader`).
 
-![](../resources/images/floattensor_shader_small.PNG)
+![](../../resources/images/floattensor_shader_small.PNG)
 
 #### Part 5: Press Play
 
 At the top of the Unity application there's a Play button. Press it! This will start the OpenMined Server.
 
-![](../resources/images/UnityPlayButton.png)
+![](../../resources/images/UnityPlayButton.png)
 
 # Next Step
 
