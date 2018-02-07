@@ -14,15 +14,21 @@ First we're going to install a tool that can install IPFS and update it.
 
 Run the following command:
 
-```go get -v -u github.com/ipfs/ipfs-update```
+```
+go get -v -u github.com/ipfs/ipfs-update
+```
 
 Once that's completed you can run that tool to install IPFS:
 
-```ipfs-update install latest```
+```
+ipfs-update install latest
+```
 
 Note: If `ipfs-update` cannot be found make sure your `GOPATH` is added to your `PATH` environment variable. If `GOPATH` isn't set then its mostly in your users home directory `C:\Users\{user-name}\Go\bin`. So this can be added to your `PATH` with the following command:
 
-```set PATH=%PATH%;C:\Users\{user-name}\Go\bin```
+```
+set PATH=%PATH%;C:\Users\{user-name}\Go\bin
+```
 
 where {user-name} is your user name.
 
@@ -30,11 +36,15 @@ where {user-name} is your user name.
 
 Now, you need to initialize IPFS:
 
-```ipfs init```
+```
+ipfs init
+```
 
 And start the daemon, this is what is used to connect to the wider IPFS network:
 
-```ipfs daemon --enable-pubsub-experiment```
+```
+ipfs daemon --enable-pubsub-experiment
+```
 
 ## Step 4: Install PyTorch
 
@@ -42,7 +52,9 @@ Currently Windows isn't officially supported by PyTorch (hopefully soon!) but a 
 
 This can be installed with the following command:
 
-```conda install -c peterjc123 pytorch```
+```
+conda install -c peterjc123 pytorch
+```
 
 More information can be found [here](https://github.com/pytorch/pytorch/issues/494#issuecomment-322096506). There are other ways of installing in that thread so GPU/CUDA is supported.
 
@@ -52,11 +64,15 @@ The Grid currently only supports Python 3.6 so make sure that is installed/enabl
 
 First you need to get the grid code:
 
-```git clone git@github.com:OpenMined/Grid.git```
+```
+git clone git@github.com:OpenMined/Grid.git
+```
 
 Call the setup script:
 
-```python setup.py install```
+```
+python setup.py install
+```
 
 This script installs the rest of the dependencies and installs it.
 
@@ -64,11 +80,15 @@ This script installs the rest of the dependencies and installs it.
 
 To run the worker run the following python file:
 
-```python ipfs_grid_worker_daemon.py```
+```
+python ipfs_grid_worker_daemon.py
+```
 
 Next open the jupyter notebook in the notebooks folder:
 
-```notebooks/pubsub/Keras Grid Client and Worker.ipynb```
+```
+notebooks/pubsub/Keras Grid Client and Worker.ipynb
+```
 
 and run all of the cells. These cells should complete with no errors and you should see the model being trained!
 
