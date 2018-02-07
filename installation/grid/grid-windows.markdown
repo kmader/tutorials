@@ -30,7 +30,7 @@ Note: If `ipfs-update` cannot be found make sure your `GOPATH` is added to your 
 set PATH=%PATH%;C:\Users\{user-name}\Go\bin
 ```
 
-where {user-name} is your user name.
+where `{user-name}` is your user name.
 
 ## Step 3: Setup IPFS
 
