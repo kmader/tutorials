@@ -162,7 +162,7 @@ In the `Hierarchy` pane, click the `Main Camera`.
 
 ![](../../resources/images/HierarchyMainCamera.png)
 
-Then, in the `Inspector` pane (towards the bottom), you should see a `Syft Server (script)` inside of which is a textarea labeled `Shader`. The contents of this text area should say `FloatTensorShaders` like pictured below.
+Then, in the `Inspector` pane (towards the bottom), you should see a `Syft Server (script)` inside of which is a textarea labeled `Shader`. The contents of this text area should say `Shaders` like pictured below.
 
 ![](../../resources/images/CameraInspector.png)
 
@@ -170,7 +170,7 @@ If you don't see `Syft Server Script` in the inspector pane, drag the file `Asse
 
 ![](../../resources/images/DragSyftServer.png)
 
-If you DO see the `Syft Server Script` but `FloatTensorShaders` is NOT in the `Shader` area (if area will is grayed out and say `None (ComputeShader)`. Drag the file `Assets/OpenMined/Syft/Tensor/Ops/Shaders/FloatTensorShaders` into that text area like seen below.
+If you DO see the `Syft Server Script` but `Shaders` is NOT in the `Shader` area (if area will is grayed out and say `None (ComputeShader)`. Drag the file `Assets/OpenMined/Syft/Tensor/Ops/Shaders/Shaders` into that text area like seen below.
 
 ![](../../resources/images/DragShader.png)
 
