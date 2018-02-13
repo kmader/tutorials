@@ -17,23 +17,23 @@ This repository includes step-by-step tutorials for using and adding to function
 ## Contents
 
 ### [Beginner](https://github.com/OpenMined/tutorials/tree/master/beginner)
-In this tutorial we gonna know how to use the OpenMined Keras Interface and build our first Neural Network.
+In this tutorial, we'll learn how to use the OpenMined Keras interface and build our first neural network.
 
 - **Guide**: [Train a Basic Neural Network (Keras Interface)](https://github.com/OpenMined/tutorials/blob/master/beginner/Keras%20Neural%20Net.ipynb)
 - **YouTube Video**: [Basic Network](https://youtu.be/Zq4onPm-h2I)
 - **Project**: Find a new dataset and train a new neural network using the Keras interface!
 
 ### [Intermediate]()
-Now let's build the Guts of a Deep Learning Framework. We gonna know how OpenMined Tensors Work and understand the Magic under the hood.
+Now let's build the guts of a deep learning framework. We'll learn how OpenMined Tensors work.
 
-- **Guide**: [How to Add a (CPU-powered) Function to a Tensor](https://github.com/OpenMined/tutorials/blob/master/intermediate/adding-a-new-tensor.markdown)
+- **Guide**: [How to add a (CPU) Function to a Tensor](https://github.com/OpenMined/tutorials/blob/master/intermediate/adding-a-new-tensor.markdown)
 - **YouTube Video**: [OpenMined Tutorial - How OpenMined Tensors Work](https://youtu.be/up0BcCN0aDs)
 - **Project**: Add a feature to Float Tensors
 
 ### [Advanced]()
-And finally, let's do some performance improvements, undestading a little about GPUs and Networking. We gonna optimizing the key bottlenecks of the system.
+And finally, let's do some performance improvements, understanding a little about GPUs and networking. We'll learn how to optimize some ofthe key bottlenecks of the system.
 
-- **Guide**: [How to add a (GPU-powered) Function to a Tensor](https://github.com/OpenMined/tutorials/blob/master/advanced/gpu_functionality.markdown)
+- **Guide**: [How to add a (GPU) Function to a Tensor](https://github.com/OpenMined/tutorials/blob/master/advanced/gpu_functionality.markdown)
 - **YouTube Video**: [Add Code to GPU Tensor](https://youtu.be/g9UaQktlp5A)
 - **Project**: The Need for Speed - Picking a Neural Network and Making it Faster
 
@@ -43,7 +43,7 @@ If you are interested in contributing to this, first check out our [Contributor 
 
 Here's how you can contribute:
 
-we would like to explore every possible use of the Openmined ecosystem and share these with the community, To that end you can create various tutorials and Put it in one of the _beginner_, _intermediate_, _advanced_  sections based on their appropriate levels.
+We would like to explore every possible use of the Openmined ecosystem and share these with the community. To that end, you can create various tutorials and put each in one of the _beginner_, _intermediate_, _advanced_  sections based on their appropriate levels.
 
 You can raise an issue or submit a pull request, whichever is more convenient for you.
 
