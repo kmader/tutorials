@@ -61,7 +61,7 @@ let trainingSamples = 60000
 let dataset = mnist(trainingSamples, testSamples)
 ```
 
-For convenience we will wrap our code in a async function scope, as the Syft.js is an async promise style API.  
+For convenience we will wrap our code in a async function scope, as the Syft.js has an async promise style API.  
 
 ```JavaScript
 async function train() {
