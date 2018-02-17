@@ -2,8 +2,9 @@
 Syft.js is a JavaScript interface for creating and training models on the Open Mined backend.  In this tutorial we will go over how to get Syft.js up and running with a demo model, and train it on the MNIST dataset to predict handwritten digits.
 
 ## Prerequisites
-If you have not yet installed the Open Mined backend, click the link bellow before continuing with this tutorial.
+If you have not yet installed the Open Mined backend, click the link bellow before continuing with this tutorial.  You will also have to install ZeroMQ.
  - [Install and setup the Open Mined backend](../../../installation/OpenMined)
+ - [ZeroMQ](https://www.npmjs.com/package/zmq)
 
 ## Installing NodeJS
 First you will need to install NodeJS v8 or higher (we have only tested on v8).  You can download NodeJS from https://nodejs.org.
