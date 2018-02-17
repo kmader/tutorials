@@ -6,6 +6,7 @@ If you have not yet installed the Open Mined backend, click the link bellow befo
  - [Install and setup the Open Mined backend](../../../installation/OpenMined)
  - [ZeroMQ](https://www.npmjs.com/package/zmq)
 
+
 ## Installing NodeJS
 First you will need to install NodeJS v8 or higher (we have only tested on v8).  You can download NodeJS from https://nodejs.org.
 
