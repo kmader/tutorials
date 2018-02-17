@@ -1,5 +1,6 @@
 ## Create Reinforcement Learning Demos with OpenMined
 
+**YOUTUBE WALKTHROUGH:** https://www.youtube.com/watch?v=6ICjrHWJe3w&feature=youtu.be
 
 ### What's Reinforcement Learning?
 
