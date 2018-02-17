@@ -3,7 +3,8 @@ Syft.js is a JavaScript interface for creating and training models on the Open M
 
 ## Prerequisites
 If you have not yet installed the Open Mined backend, click the link bellow before continuing with this tutorial.
- - [Install and setup the Open Mined backend]()
+
+ - [Install and setup the Open Mined backend](../../../installation/OpenMined)
 
 ## Installing NodeJS
 First you will need to install NodeJS v8 or higher (we have only tested on v8).  You can download NodeJS from https://nodejs.org.
@@ -145,6 +146,8 @@ train()
 
 ![npm init](img/code-file.png)
 
+ - [click here for full code example](./mnist-model.js)
+
 ## Running the code!
 
 First we will need to run the Open Mined backend by opening the OpenMined project in Unity and hitting play.
@@ -159,8 +162,6 @@ commands
 ```
 
 ![npm init](img/start-training.png)
-
- - [click here for full code example](./mnist-model.js)
 
 Finally we have our result!
 
