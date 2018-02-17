@@ -30,7 +30,7 @@ The perfect place to begin your jouney is by installing pre-requisites for diffe
 In this tutorial, we'll learn how to use the OpenMined Keras interface and build our first neural network.
 
 - **PySyft**
-    - **Tutorial**: [Train a Basic Neural Network (Keras Interface)](https://github.com/OpenMined/tutorials/blob/master/beginner/Keras%20Neural%20Net.ipynb) - **Video Tutorial**: [Basic Network](https://youtu.be/Zq4onPm-h2I)
+    - **Tutorial**: [Train a Basic Neural Network (Keras Interface)](https://github.com/OpenMined/tutorials/blob/master/beginner/PySyft/Keras%20Neural%20Net.ipynb) - **Video Tutorial**: [Basic Network](https://youtu.be/Zq4onPm-h2I)
 - **syft.js**
     - **Tutorial**: [Train an MNIST Neural Network](https://github.com/OpenMined/tutorials/tree/master/beginner/Syft.js/getting-started-mnist-model)
 
