@@ -3,6 +3,7 @@ Syft.js is a JavaScript interface for creating and training models on the Open M
 
 ## Prerequisites
 If you have not yet installed the Open Mined backend, click the link bellow before continuing with this tutorial.
+
  - [Install and setup the Open Mined backend](../../../installation/OpenMined)
 
 ## Installing NodeJS
