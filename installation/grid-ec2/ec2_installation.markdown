@@ -30,7 +30,7 @@ Next, you need to click the select button next to the OpenMined AMI and continue
 
 ![Key Pair](../../resources/images/keypair.png)
 
-So, at this point you can just choose `Proceed without a key pair`. There was some issues with getting the AMI to actually use the the keys pairs chosen here so I created another account which can be logged into via a password. This is discussed further below. Once you've selected that and clicked the check box, you can click `Launch Instance`.
+So, at this point you can just choose `Proceed without a key pair` if you don't need to run as root and just want log in with a password.  Password log in is discussed further below. If you'd like to create a key pair for root access there is also instructions below. Once you've selected one of these options and clicked the check box, you can click `Launch Instance`.
 
 This will begin launching the EC2 instance and you can click on EC2 instance ID and it will take you to the status page. From here, you can get the EC2 IP address/host name.
 
@@ -59,3 +59,15 @@ ipfs daemon --enable-pubsub-experiment
 ```
 
 The first command initializes your IPFS environment, creating a public private key pair to use within the IPFS system. The second command launches the IPFS daemon so you can actually connect to other IPFS nodes.
+
+## Key Pair Set Up
+
+If you selected created a key pair, downloaded it and want root access, you can do that by running the following two commands:
+
+```
+chmod og-r <location of pem file>
+```
+
+```
+ssh -i <location of pem file> root@<ip address of ec2 instance>
+```
