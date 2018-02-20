@@ -1,0 +1,13 @@
+name: openmined
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6.4
+  - numpy
+  - matplotlib
+  - pandas
+  - h5py
+  - pip:
+    - keras==2.1.3
+    - git+https://github.com/OpenMined/PySyft

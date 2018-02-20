@@ -1,5 +1,6 @@
 # Tutorials
 [![Chat on Slack](https://img.shields.io/badge/chat-on%20slack-7A5979.svg)](https://openmined.slack.com/messages/beginner)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/kmader/tutorials/master)
 
 This repository includes step-by-step tutorials for using and adding to functionality within the OpenMined ecosystem. **Before** you begin, you should start by completing our [installation guides](https://github.com/OpenMined/tutorials/tree/master/installation) which will get you setup and ready to complete the tutorials. If you get stuck, the best place to ask questions is in the *#beginner* [Slack](https://openmined.slack.com/) channel.
 
@@ -50,7 +51,7 @@ And finally, let's do some performance improvements, understanding a little abou
 
 ## [Proposals](https://github.com/OpenMined/tutorials/tree/master/proposals)
 
-If you are interested in a bit more of a self-directed journey than any of these tutorials above, we also have a section for proposed projects!!! 
+If you are interested in a bit more of a self-directed journey than any of these tutorials above, we also have a section for proposed projects!!!
 
 - [Create Reinforcement Learning Demos with OpenMined](https://github.com/OpenMined/tutorials/blob/master/proposals/create-reinforcement-learning-demos.markdown)
 
